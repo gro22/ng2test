@@ -17,7 +17,7 @@ export class CalculationDetailsComponent implements OnInit {
   constructor(private route: ActivatedRoute, private calculationService: CalculationService, private logger: Logger) {    
   }
 
-  ngOnInit() {
+  ngOnInit() { 
     let id = parseInt(this.route.snapshot.params['id']);
     
     this.logger.log("id:" + id);
