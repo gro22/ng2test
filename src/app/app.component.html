@@ -1,3 +1,20 @@
-<h1>
-  {{title}}
-</h1>
+<header id="header">
+  <h1 id="logo">
+    <a [routerLink]="['/home']"></a>
+  </h1>
+
+  <div id="menu">
+    <a [routerLink]="['/home']" class="btn">Home</a>
+    <a [routerLink]="['/calculation']" class="btn">Calculation</a>
+    <a [routerLink]="['/calculation/3']" class="btn">Calculation/3</a>        
+  </div>
+
+  <div class="color"></div>
+  <div class="clear"></div>
+</header>
+
+<div id="container">
+  <router-outlet></router-outlet>
+</div>
+
+<!--<alert type="success">hello</alert>-->
